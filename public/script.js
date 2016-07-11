@@ -1,15 +1,22 @@
-const random = (start, end) => (
-  Math.ceil(start + Math.random() * (end - start))
-)
+function random(start, end) {
+  return Math.ceil(start + Math.random() * (end - start))
+}
 
-const randomColor = () => {
-  const hue = random(160, 200)
-  const saturation = 100
-  const lightness = 70
-  let color = `hsl(${hue}, ${saturation}%, ${lightness}%)`
+function randomColor() {
+  var hue = random(160, 200)
+  var saturation = 100
+  var lightness = 70
+  var color =
+    ['hsl(',
+    hue,
+    ',',
+    saturation,
+    '%,',
+    lightness,
+    '%)'].join('')
   return color
 }
 
-const color = randomColor()
-const beetle = document.getElementsByClassName('beetle')[0]
+var color = randomColor()
+var beetle = document.getElementsByClassName('beetle')[0]
 beetle.style.backgroundColor = color
