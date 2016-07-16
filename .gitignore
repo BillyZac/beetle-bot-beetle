@@ -1,2 +1,5 @@
 firebase.json
 .DS_Store
+public/
+node_modules/
+*.log
