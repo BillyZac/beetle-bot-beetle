@@ -16,3 +16,11 @@ Serve on localhost:3333, if you're so inclined:
 ```
 npm start
 ```
+
+## Tests
+To run tests:
+```
+npm test
+```
+
+Put new tests in `/test` in a file named after the function it's meant to test.
