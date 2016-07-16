@@ -20,3 +20,10 @@ function randomColor() {
 var color = randomColor()
 var beetle = document.getElementsByClassName('beetle')[0]
 beetle.style.backgroundColor = color
+
+color = randomColor()
+var spots = document.getElementsByClassName('spot')
+
+for (var i=0; i < spots.length; i++) {
+  spots.item(i).style.backgroundColor = color
+}
