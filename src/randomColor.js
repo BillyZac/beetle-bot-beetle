@@ -1,9 +1,9 @@
 var random = require('./random')
 
-module.exports = function randomColor() {
+module.exports = function randomColor(lightness) {
   var hue = random(0, 100)
-  var saturation = 100
-  var lightness = 70
+  var saturation = 70
+  var lightness = lightness
   var color =
     ['hsl(',
     hue,
