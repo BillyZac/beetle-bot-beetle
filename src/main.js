@@ -1,10 +1,10 @@
 require('./style.css')
 
-var random = require('./random')
-var randomColor = require('./randomColor')
-
-var color = randomColor(40)
-
 const container = document.getElementById('container')
-const beetle = document.createElement('svg')
-container.appendChild(beetle)
+
+const spot = document.createElementNS('http://www.w3.org/2000/svg', 'circle')
+spot.setAttribute('cx', 200)
+spot.setAttribute('cy', 200)
+spot.setAttribute('r', 20)
+
+container.appendChild(spot)
