@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "test": "mocha",
-    "build": "webpack",
+    "build": "webpack --watch",
     "start": "cd public && httpster"
   },
   "repository": {
