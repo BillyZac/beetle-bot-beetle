@@ -1,10 +1,12 @@
 require('./style.css')
+const createSpot = require('./createSpot')
 
 const container = document.getElementById('container')
 
-const spot = document.createElementNS('http://www.w3.org/2000/svg', 'circle')
-spot.setAttribute('cx', 200)
-spot.setAttribute('cy', 200)
-spot.setAttribute('r', 20)
+const spot = createSpot({
+  color: 'tomato',
+  x: 300,
+  y: 300,
+})
 
 container.appendChild(spot)
