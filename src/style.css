@@ -1,8 +1,8 @@
 /*body * { outline: 1px solid pink; }*/
 
 body,
-#container,
-.beetle {
+.wrapper {
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -11,24 +11,4 @@ body,
   width: 400px; /* The sum of width+padding must be 600px to match the screenshot dimensions. */
   padding: 100px;
   background: #222;
-}
-
-.beetle {
-  background: #222;
-  border-radius: 50%;
-  width: 400px;
-  height: 400px;
-}
-.row {
-  height: 100px;
-  width: 400px;
-  text-align: center;
-  /*padding-top: 150px;*/
-}
-.spot {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 40px;
 }
