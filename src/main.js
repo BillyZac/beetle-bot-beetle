@@ -12,20 +12,28 @@ const body = createSpot({
   color: randomColor(40),
 })
 
-const spot = createSpot({
-  x: 200,
-  y: 200,
+const leftSpot = createSpot({
+  x: 110,
+  y: 180,
   size: 20,
-  color: randomColor(40),
+  color: randomColor(80),
+})
+
+const rightSpot = createSpot({
+  x: 290,
+  y: 180,
+  size: 20,
+  color: randomColor(80),
 })
 
 const tri = createTriangle({
   x: 200,
-  y: 185,
-  color: randomColor(40),
-  size: 100,
+  y: 95,
+  color: randomColor(60),
+  size: 190,
 })
 
 container.appendChild(body)
 container.appendChild(tri)
-container.appendChild(spot)
+container.appendChild(leftSpot)
+container.appendChild(rightSpot)

@@ -10,7 +10,7 @@ module.exports = options => {
      L ${x + halfWidth} ${y + size}
      L ${x}             ${y}`)
   path.setAttribute('fill', color)
-  path.setAttribute('opacity', 0.5)
+  path.setAttribute('opacity', 1)
 
   return path
 }
