@@ -6,7 +6,7 @@ module.exports = options => {
   spot.setAttribute('cy', options.y)
   spot.setAttribute('r', size)
   spot.setAttribute('fill', options.color)
-  spot.setAttribute('opacity', 1)
+  spot.setAttribute('opacity', 0.9)
 
   return spot
 }

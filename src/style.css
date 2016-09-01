@@ -10,5 +10,5 @@ body,
   height: 400px;
   width: 400px; /* The sum of width+padding must be 600px to match the screenshot dimensions. */
   padding: 100px;
-  background: #222;
+  /*background: #222;*/
 }
