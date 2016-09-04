@@ -2,8 +2,8 @@ require('./style.css')
 const createSpot = require('./createSpot')
 const createStripe = require('./createStripe')
 const createTriangle = require('./createTriangle')
-const createBlob = require('./createBlob')
-var randomColor = require('./randomColor')
+const createEyes = require('./createEyes')
+const randomColor = require('./randomColor')
 
 const container = document.getElementById('container')
 
@@ -28,12 +28,7 @@ const rightSpot = createSpot({
   color: randomColor(80),
 })
 
-const tri = createBlob({
-  x: 200,
-  y: 95,
-  color: randomColor(0),
-  size: 190,
-})
+const eyes = createEyes({ size: 5 })
 
 container.appendChild(body)
 
@@ -47,3 +42,5 @@ for (let i = -300; i <= 300; i+=60) {
 
 container.appendChild(leftSpot)
 container.appendChild(rightSpot)
+container.appendChild(eyes[0])
+container.appendChild(eyes[1])
