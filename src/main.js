@@ -3,39 +3,48 @@ const createSpot = require('./createSpot')
 const createStripe = require('./createStripe')
 const createTriangle = require('./createTriangle')
 const createEyes = require('./createEyes')
-const randomColor = require('./randomColor')
-const random = require('./random')
+
+const {
+  bodySize,
+  bodyColor,
+  eyeSize,
+  eyeColor,
+  spotColor,
+  spotSize,
+} = require('./beetleDefinition')()
 
 const container = document.getElementById('container')
 
 
-
 // DEFINE SIZES
-const eyeSize = random(3, 15)
-const eyeColor = randomColor(30)
-
+// const bodySize = 150
+// const bodyColor = randomColor(40)
+// const eyeSize = random(3, 15)
+// const eyeColor = randomColor(30)
+// const spotColor = randomColor(80)
+// const spotSize = random(30, 45)
 
 
 // DEFINE PARTS
 const body = createSpot({
   x: 200,
   y: 200,
-  size: 150,
-  color: randomColor(40),
+  size: bodySize,
+  color: bodyColor,
 })
 
 const leftSpot = createSpot({
   x: 110,
   y: 180,
-  size: 20,
-  color: randomColor(80),
+  size: spotSize,
+  color: spotColor,
 })
 
 const rightSpot = createSpot({
   x: 290,
   y: 180,
-  size: 20,
-  color: randomColor(80),
+  size: spotSize,
+  color: spotColor,
 })
 
 const eyes = createEyes({
