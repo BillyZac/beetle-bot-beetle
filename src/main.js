@@ -34,15 +34,15 @@ const body = createSpot({
 })
 
 const leftSpot = createSpot({
-  x: 110,
-  y: 180,
+  x: 120,
+  y: 210,
   size: spotSize,
   color: spotColor,
 })
 
 const rightSpot = createSpot({
-  x: 290,
-  y: 180,
+  x: 280,
+  y: 210,
   size: spotSize,
   color: spotColor,
 })
