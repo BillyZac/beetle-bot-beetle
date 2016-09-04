@@ -6,6 +6,6 @@ module.exports = () => ({
   bodyColor: randomColor(40),
   eyeSize: random(3, 15),
   eyeColor: randomColor(30),
-  spotColor: randomColor(30),
+  spotColor: randomColor(40),
   spotSize: random(30, 45),
 })

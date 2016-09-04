@@ -15,7 +15,7 @@ module.exports = options => {
 
   path.setAttribute('d', d)
   path.setAttribute('fill', 'transparent')
-  path.setAttribute('stroke', 'white')
+  path.setAttribute('stroke', '#222')
   path.setAttribute('stroke-width', '10px')
   path.setAttribute('opacity', 1)
 
