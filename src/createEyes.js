@@ -1,20 +1,20 @@
 const createSpot = require('./createSpot')
 
 module.exports = (options) => {
-  const { size } = options
+  const { size, color } = options
 
   const leftEye = createSpot({
     x: 170,
     y: 20,
     size,
-    color: 'gray'
+    color,
   })
 
   const rightEye = createSpot({
     x: 230,
     y: 20,
     size,
-    color: 'gray'
+    color,
   })
 
   return [
