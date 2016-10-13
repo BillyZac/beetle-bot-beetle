@@ -10,20 +10,11 @@ const {
   eyeSize,
   eyeColor,
   spotColor,
+  strokeColor,
   spotSize,
 } = require('./beetleDefinition')()
 
 const container = document.getElementById('container')
-
-
-// DEFINE SIZES
-// const bodySize = 150
-// const bodyColor = randomColor(40)
-// const eyeSize = random(3, 15)
-// const eyeColor = randomColor(30)
-// const spotColor = randomColor(80)
-// const spotSize = random(30, 45)
-
 
 // DEFINE PARTS
 const body = createSpot({
@@ -31,6 +22,14 @@ const body = createSpot({
   y: 200,
   size: bodySize,
   color: bodyColor,
+  strokeColor: strokeColor,
+})
+const bodyDouble = createSpot({
+  x: 200,
+  y: 200,
+  size: bodySize * .7,
+  color: bodyColor,
+  strokeColor: strokeColor,
 })
 
 const leftSpot = createSpot({
@@ -52,18 +51,9 @@ const eyes = createEyes({
   color: eyeColor,
  })
 
-
-
 // APPEND PARTS
 container.appendChild(body)
-
-for (let i = -300; i <= 300; i+=60) {
-  const stripe = createStripe({
-    xC: 200 + i,
-    yC: 200,
-  })
-  container.appendChild(stripe)
-}
+container.appendChild(bodyDouble)
 
 container.appendChild(leftSpot)
 container.appendChild(rightSpot)
